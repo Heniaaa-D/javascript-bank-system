@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-background">
+      <div class="py-8 px-5 h-screen overflow-y-auto pb-28">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-2 text-ink-text/60">
+            <p class="text-[14px] cards-counter">2 CARDS</p>
+            <p>Your cards</p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 cards-container"
+          >
+            <div
+              id="add-card-section"
+              class="bg-background border border-dashed border-border rounded-[20px] py-16"
+            >
+              <div class="flex flex-col gap-1 items-center justify-center">
+                <div>
+                  <button
+                    class="bg-border flex items-center justify-center text-terracotta rounded-full px-2 py-2 text-[20px] cursor-pointer add-card-button"
+                  >
+                    <i class="fa-solid fa-plus add-card-icon"></i>
+                  </button>
+                </div>
+                <p
+                  class="hidden font-bold text-[14px] text-ink-text/70 card-limit"
+                >
+                  Card limit reached
+                </p>
+                <p
+                  class="text-ink-text/40 text-[10px] three-cards-limit hidden"
+                >
+                  You can have up to 3 cards
+                </p>
+                <p class="text-ink-text/40 text-[10px] remove-one-card hidden">
+                  Remove one to add another
+                </p>
+                <p class="font-bold text-[14px] text-ink-text/70 add-card-text">
+                  Add virtual card
+                </p>
+                <p class="text-ink-text/40 text-[10px] add-text">
+                  Instant, single-use numbers for online checkout
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full fixed bottom-0 bg-white border border-border py-3 px-10 flex p-5 justify-between z-30"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer dashboard"
+        >
+          <i
+            class="fa-solid fa-house text-gray-400 dashboard-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] dashboard-text">Dashboard</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer transfer"
+        >
+          <i class="fa-regular fa-paper-plane text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Transfer</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer people"
+        >
+          <i class="fa-solid fa-people-group text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">People</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer cards"
+        >
+          <i
+            class="fa-regular fa-credit-card text-gray-400 cards-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] cards-text">Cards</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Activity</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer settings"
+        >
+          <i class="fa-solid fa-gear text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Settings</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="cards.js"></script>
+  </body>
+</html>

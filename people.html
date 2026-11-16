@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-background font-fraunces">
+      <div class="py-5 px-10 flex flex-col gap-12 pb-28">
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col gap-3 w-full">
+            <p class="text-2xl font-semibold text-black">People</p>
+
+            <div
+              class="rounded-3xl bg-white border border-border py-1 px-2 w-max flex items-center gap-2"
+            >
+              <div class="rounded-full h-1 w-1 bg-red-800"></div>
+              <p class="people-counter font-light text-black/30"></p>
+            </div>
+          </div>
+
+          <button
+            class="bg-red-800 text-white flex items-center rounded-lg py-3 px-4 gap-3 add-person cursor-pointer whitespace-nowrap"
+          >
+            <p class="font-light">+</p>
+            <p class="font-semibold">Add person</p>
+          </button>
+        </div>
+
+        <div class="bg-white border border-border rounded-[20px] p-8 relative">
+          <i
+            class="fa-solid fa-magnifying-glass absolute text-gray-500 left-12 bottom-12"
+          ></i>
+          <input
+            type="search"
+            placeholder="Search people"
+            class="border border-border rounded-xl bg-background w-full px-10 py-3"
+          />
+        </div>
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 gap-3 person-container"
+        ></div>
+      </div>
+
+      <div
+        class="w-full fixed bottom-0 bg-white border border-border py-3 px-10 flex p-5 justify-between z-30"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer dashboard"
+        >
+          <i
+            class="fa-solid fa-house text-gray-400 dashboard-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] dashboard-text">Dashboard</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer transfer"
+        >
+          <i class="fa-regular fa-paper-plane text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Transfer</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer people"
+        >
+          <i
+            class="fa-solid fa-people-group text-gray-400 people-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] people-text">People</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer cards"
+        >
+          <i
+            class="fa-regular fa-credit-card text-gray-400 cards-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] cards-text">Cards</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Activity</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer settings"
+        >
+          <i
+            class="fa-solid fa-gear text-gray-400 settings-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] settings-text">Settings</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="people.js"></script>
+  </body>
+</html>

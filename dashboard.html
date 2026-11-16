@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-background relative h-screen">
+      <div class="p-5">
+        <div class="flex flex-col gap-8">
+          <div class="flex justify-between items-center">
+            <div class="text-container flex flex-col gap-1">
+              <p class="text-gray-500 font-semibold font-fraunces greeting"></p>
+              <p class="font-bold text-xl users-name"></p>
+            </div>
+            <div class="flex gap-1">
+              <div
+                class="bg-white border border-border rounded-full flex items-center justify-center w-8 h-8"
+              >
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div
+                class="bg-brick-primary rounded-full w-8 h-8 profile cursor-pointer text-white flex justify-center items-center text-[12px]"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="bg-white border border-border w-full rounded-[20px] p-5 flex flex-col gap-6"
+          >
+            <div
+              class="bg-linear-to-r from-brick-primary to-brick-deep w-full flex flex-col gap-5 p-4 rounded-[20px]"
+            >
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-fire text-white/80"></i>
+                  <p class="text-white/90 text-[12px] font-semibold">
+                    Ember Checking
+                  </p>
+                </div>
+                <div class="bg-terracotta/45 w-6 h-4 rounded-xs"></div>
+              </div>
+
+              <p
+                data-id=" 4471 8823 0091 4471"
+                class="text-white/90 tracking-widest card-number"
+              >
+                4471 8823 0091 4471
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-0.5">
+                  <p class="text-[10px] text-white/80 font-light">
+                    CARD HOLDER
+                  </p>
+                  <p class="text-white/90 font-semibold card-holder"></p>
+                </div>
+                <div class="flex flex-col gap-0.5">
+                  <p class="text-[10px] text-white/80 font-light">EXPIRES</p>
+                  <p class="text-white/90">08/29</p>
+                </div>
+                <div
+                  class="bg-brick-primary/50 w-6 h-6 rounded-md flex items-center justify-center eye-button"
+                >
+                  <i
+                    class="fa-solid fa-eye text-white/70 text-[10px] eye-open"
+                  ></i>
+                  <i
+                    class="fa-solid fa-eye-slash text-white/70 text-[10px] eye-closed hidden"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <p class="text-gray-400 text-[10px]">Available balance</p>
+              <p class="text-black font-semibold font-mono text-3xl">
+                $8,412.63
+              </p>
+            </div>
+            <div class="flex gap-3">
+              <button
+                class="bg-brick-primary text-white/80 text-[12px] flex items-center justify-center gap-2 py-2.5 px-4 rounded-md font-semibold cursor-pointer send-money-button"
+              >
+                <i class="fa-regular fa-paper-plane"></i>
+                <p>Send</p>
+              </button>
+              <button
+                class="flex items-center justify-center gap-2 bg-background border border-border rounded-md p-2 font-semibold text-[14px] cursor-pointer"
+              >
+                <i class="fa-solid fa-arrow-down"></i>
+                <p>Request</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full absolute bottom-0 bg-white border border-border py-3 px-10 flex p-5 justify-between"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer dashboard"
+        >
+          <i
+            class="fa-solid fa-house text-gray-400 dashboard-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] dashboard-text">Dashboard</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer transfer"
+        >
+          <i class="fa-regular fa-paper-plane text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Transfer</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer people"
+        >
+          <i class="fa-solid fa-people-group text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">People</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer cards"
+        >
+          <i class="fa-regular fa-credit-card text-gray-400 cards-icon"></i>
+          <p class="text-gray-400 text-[12px] cards-text">Cards</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Activity</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer settings"
+        >
+          <i class="fa-solid fa-gear text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Settings</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="dashboard.js"></script>
+  </body>
+</html>

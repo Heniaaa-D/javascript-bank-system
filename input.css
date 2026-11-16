@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: #f1efe8;
+  --color-brick-primary: #b3392c;
+  --color-brick-deep: #8c2b21;
+  --color-terracotta: #d8613f;
+  --color-amber: #e0973c;
+  --color-olive-positive: #6b7b4f;
+  --color-olive: #556b2f;
+  --color-ink-text: #2b211d;
+  --color-background: #fbf3ea;
+  --color-border: #ead9c9;
+  --font-fraunces: "Fraunces", serif;
+}
+
+.error.auth-input {
+  border-color: red;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.active-background {
+  background-color: rgba(255, 192, 203, 0.3);
+  color: red;
+}
+
+.active-text {
+  color: red;
+}
+
+.frozen {
+  position: absolute;
+  inset: 0;
+  background: rgba(90, 45, 15, 0.18);
+  border-radius: 20px;
+  transition: all 500ms;
+  z-index: 10;
+}
+
+.eye-closed.hidden {
+  display: none;
+}
+
+.eye-open.hidden {
+  display: none;
+}

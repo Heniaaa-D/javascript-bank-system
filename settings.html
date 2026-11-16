@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-background relative font-fraunces">
+      <div class="flex flex-col gap-8 py-8 px-8 pb-28">
+        <div class="flex items-center gap-3">
+          <div
+            class="rounded-full bg-white border border-border px-3 py-2 settings-left-arrow cursor-pointer"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <p class="text-3xl font-semibold">Settings</p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div
+            class="bg-white rounded-xl border border-border flex flex-col gap-4 p-4"
+          >
+            <div class="flex flex-col gap-4">
+              <p class="text-xl font-semibold">Profile</p>
+              <div class="flex gap-4">
+                <div
+                  class="bg-brick-primary rounded-full w-14 h-14 profile cursor-pointer text-white flex justify-center items-center"
+                ></div>
+                <div class="flex flex-col gap-1">
+                  <p class="name-lastname font-semibold"></p>
+                  <p class="member-since text-ink-text/60 text-[14px]"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-ink-text/80">Full Name</p>
+              <div
+                class="border border-border bg-background rounded-xl px-4 py-3 users-name"
+              ></div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-ink-text/80">Email</p>
+              <div
+                class="border border-border bg-background rounded-xl px-4 py-3 users-email"
+              ></div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-ink-text/80">Phone</p>
+              <div
+                class="border border-border bg-background rounded-xl px-4 py-3 users-email"
+              >
+                0454858784544
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-lock text-black/50"></i>
+            <p class="text-black/50">Security</p>
+          </div>
+          <div
+            class="bg-white rounded-xl border border-border flex items-center gap-4 p-4"
+          >
+            <button
+              class="border border-border p-1 rounded-md cursor-pointer change-password-button bg-background text-black"
+            >
+              Change Password
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="bg-white border border-border px-20 py-4 rounded-full flex items-center justify-center text-red-800 font-semibold cursor-pointer logout-button"
+          >
+            Log Out
+          </button>
+        </div>
+      </div>
+      <div
+        class="fixed inset-0 bg-black/40 flex items-center justify-center z-50 change-password-modal hidden"
+      >
+        <div
+          class="border border-border bg-white flex flex-col gap-4 w-96 rounded-3xl"
+        >
+          <div
+            class="flex flex-col justify-center gap-5 px-5 py-3 font-fraunces"
+          >
+            <div class="relative">
+              <button
+                class="absolute right-0 close-modal top-3 cursor-pointer py-0.5 px-2.5 bg-background border border-border rounded-full flex items-center justify-center"
+              >
+                x
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-xl">Change password</p>
+              <p class="font-light text-ink-text/60 text-[14px]">
+                Choose a new password with at least 8 characters
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label class="font-semibold text-ink-text/60 text-[14px]"
+                >Current password</label
+              >
+              <input
+                placeholder="Enter your current password"
+                class="border border-border w-full rounded-lg current-psw-input p-2 text-[14px] bg-background"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-semibold text-ink-text/60 text-[14px]"
+                >New password</label
+              >
+              <input
+                placeholder="At least 8 characters"
+                class="border border-border w-full rounded-lg new-psw-input bg-background p-2 text-[14px]"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-semibold text-ink-text/60 text-[14px]"
+                >Confirm new password</label
+              >
+              <input
+                placeholder="Re-enter new password"
+                class="border border-border w-full rounded-lg confirm-new-psw-input p-2 text-[14px] bg-background"
+              />
+            </div>
+            <p class="hidden text-red-600 text-center incorrect-password">
+              Current password is incorrect!
+            </p>
+            <p class="hidden text-red-600 text-center psw-dont-match">
+              Passwords do not match!
+            </p>
+            <p class="psw-length text-red-600 text-center hidden">
+              Password must be at least 8 characters
+            </p>
+            <div class="flex gap-2 items-center">
+              <button
+                class="bg-brick-primary text-white text-[14px] font-semibold flex items-center justify-center py-2 px-5 rounded-lg save-changes-button"
+              >
+                Save password
+              </button>
+              <button
+                class="border border-border flex items-center justify-center cancel-button py-2 px-3 rounded-lg bg-background"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full fixed bottom-0 bg-white border border-border py-3 px-10 flex p-5 justify-between z-30"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer dashboard"
+        >
+          <i
+            class="fa-solid fa-house text-gray-400 dashboard-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] dashboard-text">Dashboard</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer transfer"
+        >
+          <i class="fa-regular fa-paper-plane text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Transfer</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer people"
+        >
+          <i class="fa-solid fa-people-group text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">People</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer cards"
+        >
+          <i
+            class="fa-regular fa-credit-card text-gray-400 cards-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] cards-text">Cards</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Activity</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i
+            class="fa-solid fa-gear text-gray-400 settings-icon py-1 px-1.5 rounded-md cursor-pointer"
+          ></i>
+          <p class="text-gray-400 text-[12px] settings-text">Settings</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="settings.js"></script>
+  </body>
+</html>

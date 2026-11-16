@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-background h-screen">
+      <div class="flex flex-col p-10 gap-5">
+        <div class="flex items-center justify-between">
+          <div
+            class="rounded-full bg-white border border-border px-3 py-2 settings-left-arrow cursor-pointer"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <p class="text-2xl font-semibold">Transfer</p>
+          <div
+            class="bg-brick-primary rounded-full w-10 h-10 profile cursor-pointer text-white flex justify-center items-center text-[12px]"
+          ></div>
+        </div>
+        <div class="flex flex-col gap-2.5">
+          <p class="text-ink-text/55">From</p>
+          <div
+            class="border border-border bg-white p-4 rounded-2xl flex gap-4 items-center"
+          >
+            <div class="rounded-2xl bg-brick-deep w-10 h-10"></div>
+            <div class="flex flex-col">
+              <p class="text-xl font-semibold">Ember Checking</p>
+              <div class="flex items-center text-ink-text/40 gap-3 font-light">
+                <p class="cards-number"></p>
+                <p>•</p>
+                <p>$8,412.63</p>
+                <p>available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2.5">
+          <p class="text-ink-text/55">To</p>
+          <div
+            class="border border-border bg-white rounded-2xl py-5 w-full"
+          ></div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-2.5">
+          <p class="text-ink-text/20 text-4xl font-bold text-center pt-3">$</p>
+          <input
+            class="bg-transparent text-5xl text-center text-ink-text/50 font-extrabold focus:outline-none focus:ring-0"
+            placeholder="0.00"
+          />
+          <p class="text-ink-text/50">
+            Balance: <span class="text-brick-deep">$8,412.63</span>
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-2.5 border border-border rounded-2xl bg-white p-3.5"
+        >
+          <p class="text-ink-text/50">Note (optional)</p>
+          <p class="text-xl text-ink-text/30">What's this for?</p>
+        </div>
+      </div>
+      <div
+        class="w-full fixed bottom-0 bg-white border border-border py-3 px-10 flex p-5 justify-between z-30"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer dashboard"
+        >
+          <i
+            class="fa-solid fa-house text-gray-400 dashboard-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] dashboard-text">Dashboard</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer transfer"
+        >
+          <i
+            class="fa-regular fa-paper-plane text-gray-400 transfer-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] transfer-text">Transfer</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer people"
+        >
+          <i
+            class="fa-solid fa-people-group text-gray-400 people-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] people-text">People</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer cards"
+        >
+          <i
+            class="fa-regular fa-credit-card text-gray-400 cards-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] cards-text">Cards</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line text-gray-400"></i>
+          <p class="text-gray-400 text-[12px]">Activity</p>
+        </div>
+        <div
+          class="flex flex-col gap-1 justify-center items-center cursor-pointer settings"
+        >
+          <i
+            class="fa-solid fa-gear text-gray-400 settings-icon py-1 px-1.5 rounded-md"
+          ></i>
+          <p class="text-gray-400 text-[12px] settings-text">Settings</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="transfer.js"></script>
+  </body>
+</html>
